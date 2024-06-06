@@ -1,0 +1,41 @@
+      1  A051 BOTULISMO                                     A051
+      2  A229 CARBUNCULO OU ANTRAZ                          A229
+      3  A009 COLERA                                        A009
+      4  A379 COQUELUCHE                                    A379
+      5  A90  DENGUE                                        A90 ,
+      6  A369 DIFTERIA                                      A369
+      7  B571 DOENCA DE CHAGAS AGUDA                        B571
+      8  A810 DOENCA DE CREUTZFELDT-JACOB                   A810
+      9  B09  DOENCAS EXANTEMATICAS                         B09 ,
+     10  B659 ESQUISTOSSOMOSE                               B659
+     11  Y59  EVENTOS ADVERSOS POS-VACINACAO                Y59 ,
+     12  A959 FEBRE AMARELA                                 A959
+     13  A923 FEBRE DO NILO                                 A923
+     14  A779 FEBRE MACULOSA / RICKETTSIOSES                A779
+     15  A010 FEBRE TIFOIDE                                 A010
+     16  B749 FILARIOSE NAO ESPECIFICADA                    B749
+     17  A988 HANTAVIROSE                                   A988
+     18  B19  HEPATITES VIRAIS                              B19 ,
+     19  J11  INFLUENZA HUMANA POR NOVO SUBTIPO (PANDEMICO) J11 ,
+     20  T659 INTOXICACAO EXOGENA                           T659
+     21  B551 LEISHMANIOSE TEGUMENTAR AMERICANA             B551
+     22  B550 LEISHMANIOSE VISCERAL                         B550
+     23  A279 LEPTOSPIROSE                                  A279
+     24  B54  MALARIA                                       B54 ,
+     25  G039 MENINGITE                                     G039
+     26  R699 OUTRAS SINDROMES                              R699
+     27  A809 PARALISIA FLACIDA AGUDA   POLIOMIELITE        A809
+     28  A209 PESTE                                         A209
+     29  A829 RAIVA HUMANA                                  A829
+     30  A080 ROTAVIRUS                                     A080
+     31  D699 SINDROME DA FEBRE HEMORRAGICA AGUDA           D699
+     32  N199 SINDROME DA INSUFICIENCIA RENAL AGUDA         N199
+     33  A08  SINDROME DIARREICA AGUDA                      A08 ,
+     34  J06  SINDROME GRIPAL                               J06 ,
+     35  R17  SINDROME ICTERICA AGUDA                       R17 ,
+     36  G043 SINDROME NEUROLOGICA AGUDA                    G043
+     37  J07  SINDROME RESPIRATORIA AGUDA                   J07 ,
+     38  A719 TRACOMA                                       A719
+     39  A219 TULAREMIA                                     A219
+     40  B019 VARICELA                                      B019
+     41  B03  VARIOLA                                       B03 ,

@@ -1,0 +1,33 @@
+;Agravos listados na portaria de notifcação compulsória de julho de 2004
+31  4
+      1  Botulismo                                          A051
+      2  Carbúnculo ou Antraz                               A229
+      3  Cólera                                             A009
+      4  Coqueluche                                         A379
+      5  Dengue                                             A90 ,
+      6  Difteria                                           A369
+      7  Doença de Chagas Aguda                             B571
+      8  Doença de Creutzfeldt-Jacob                        A810
+      9  Doenças Exantemáticas                              B09 ,
+     10  Esquistossomose                                    B659
+     11  Eventos Adversos Pós-vacina                        Y59 ,
+     12  Febre Amarela                                      A959
+     13  Febre do Nilo                                      A923
+     14  Febre Maculosa                                     A779
+     15  Febre Tifóide                                      A010
+     16  Hantavirose                                        A988
+     17  Hepatites Virais                                   B19 ,
+     18  Influenza                                          J11 ,
+     19  Intoxicações Exógenas                              T659
+     20  Leishmaniose Visceral                              B550
+     21  Leptospirose                                       A279
+     22  Malária                                            B54 ,
+     23  Meningite                                          G039
+     24  Paralisia Flácida Aguda/Poliomielite               A809
+     25  Peste                                              A209
+     26  Raiva Humana                                       A829
+     27  Síndrome Respiratória Aguda                        J07 ,
+     28  Tétano Acidental                                   A35 ,
+     29  Tétano Neonatal                                    A33 ,
+     30  Tularemia                                          A219
+     31  Varíola                                            B03 ,
