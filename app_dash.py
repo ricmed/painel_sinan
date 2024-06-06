@@ -143,9 +143,19 @@ with st.container(border=False):
     df_filtrado = df_filtrado[df_filtrado['CS_RACA'].isin(raca)]
     df_filtrado = df_filtrado[df_filtrado['ID_AGRAVO'] == agravo]
 
-    # Gráfico - Sexo
-    st.markdown('**Sexo**')
-    st.bar_chart(data=df_filtrado['CS_SEXO'].value_counts(),
-                 height=400,
-                 width=600,
-                 use_container_width=False)
+    with st.container(border=True):
+        g1, g2 = st.columns(2)
+        with g1:
+            # Gráfico - Sexo
+            st.markdown('**Sexo**')
+            st.bar_chart(data=df_filtrado['CS_SEXO'].value_counts(),
+                         height=400,
+                         width=600,
+                         use_container_width=False)
+        with g2:
+            # Gráfico - Raça
+            st.markdown('**Raça**')
+            st.bar_chart(data=df_filtrado['CS_RACA'].value_counts(),
+                         height=400,
+                         width=600,
+                         use_container_width=False)
