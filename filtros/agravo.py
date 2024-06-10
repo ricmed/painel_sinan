@@ -1,16 +1,5 @@
-import streamlit as st
-import pandas as pd
-
-# Load filtros
-from filtros import ano
-from filtros import raca
-
-
-colunas_painel = ['NU_NOTIFIC', 'ID_AGRAVO', 'NU_ANO', 'ID_REGIONA', 'ID_MUNICIP', 'CS_SEXO', 'CS_RACA']
-
-
-id_agravos = {
-    'A90': 'DENGUE',
+agravos = {
+    'A90': 'A90 - DENGUE',
     'A630': 'Verrugas anogenitais',
     'A60':'Herpes',
     'A53': 'Sifilis',
@@ -92,68 +81,3 @@ id_agravos = {
     'Z21': 'Estado de infeccao assintomatica pelo virus da imunodeficiencia humana [HIV]',
     'Z579': 'Exposicao ocupacional a fatores de risco',
 }
-
-
-# Configuração da página
-st.set_page_config(
-    layout="wide",
-    page_title="Painel - Dashboards"
-)
-
-
-# Título
-st.title("Painel de Dashboards")
-
-# Cabeçalho da página
-st.title('Painel')
-with st.container(border=True):
-    st.write('Dashboard - Agravos')
-
-
-# Leitura do arquivo
-@st.cache_data
-def load_data():
-    return pd.read_csv("painel.csv", sep=',')
-
-
-df = load_data()
-
-
-# Filtros da página
-with st.container(border=True):
-    st.markdown('**Filtros**')
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        ano = st.multiselect(label='Ano', options=ano.ANOS, default=ano.ANOS)
-    with col2:
-        sexo = st.multiselect(label='Sexo', options=['Masculino', 'Feminino', 'Ignorado'],
-                              default=['Masculino', 'Feminino', 'Ignorado'])
-    with col3:
-        raca = st.multiselect(label='Raça', options=raca.RACAS,
-                              default=raca.RACAS)
-    with col4:
-        agravo = st.selectbox(label='Agravo', options=list(id_agravos.values()))
-
-with st.container(border=False):
-    # Filtrando o DataFrame
-    df_filtrado = df[df['NU_ANO'].isin(ano)]
-    df_filtrado = df_filtrado[df_filtrado['CS_SEXO'].isin(sexo)]
-    df_filtrado = df_filtrado[df_filtrado['CS_RACA'].isin(raca)]
-    df_filtrado = df_filtrado[df_filtrado['ID_AGRAVO'] == agravo]
-
-    with st.container(border=True):
-        g1, g2 = st.columns(2)
-        with g1:
-            # Gráfico - Sexo
-            st.markdown('**Sexo**')
-            st.bar_chart(data=df_filtrado['CS_SEXO'].value_counts(),
-                         height=400,
-                         width=600,
-                         use_container_width=False)
-        with g2:
-            # Gráfico - Raça
-            st.markdown('**Raça**')
-            st.bar_chart(data=df_filtrado['CS_RACA'].value_counts(),
-                         height=400,
-                         width=600,
-                         use_container_width=False)
